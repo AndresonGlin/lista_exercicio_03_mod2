@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="form-container">
+        <h2>Formulário de Feedback</h2>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Nome Completo">
+            </div>        
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="E-mail">
+            </div>
+
+             <div class="form-group">
+                <label for="cep">Cep:</label>
+                <input type="text" id="cep" name="cep" placeholder="Cep">
+
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua" placeholder="Rua">
+
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" placeholder="Numero">
+
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento" placeholder="Torre, Bloco">
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" placeholder="Bairro">
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" placeholder="Estado">
+            </div>
+
+            <div class="form-group">
+                <label for="tipo">Tipo de feedback:</label>
+                <div class="radio-group">
+                    <label for="positivo">
+                        <input type="radio" id="positivo" value="positivo" name="tipo">Positivo
+                    </label>
+                    <label for="negativo">
+                        <input type="radio" id="negativo" value="negativo" name="tipo">Negativo
+                    </label>                 
+                </div>
+            </div>    
+            
+            <div class="form-group">
+                <label for="desc_feedback">Feedback:</label><br>
+                <textarea id="desc_feedback" name="desc_feedback" rows="4" cols="50" placeholder="Escreva aqui seu feedback..."></textarea>
+            </div>
+
+            <div class="input-group-button">
+                <button id="enviar" type="submit">Enviar</button>                
+            </div>
+        </form>
+        </div>
+   </main>
+</body>
+</html>
